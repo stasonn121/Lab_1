@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Lab_1.Model;
 using System.Windows.Forms;
 
 namespace Lab_1.Forms
@@ -16,6 +10,21 @@ namespace Lab_1.Forms
         {
             InitializeComponent();
         }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            CoffeeMachine.Cash += (int)numCash.Value;
+            numCash.Value = 0;
+            DialogResult = DialogResult.OK;
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+            numCash.Value = 0;
+        }
+
 
     }
 }

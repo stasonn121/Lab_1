@@ -11,6 +11,7 @@ namespace Lab_1
     public partial class MainMenuForm : Form
     {
         private static BuyDrinksForm _buyDrinksForm = new BuyDrinksForm();
+        private static PaymentForm _paymentForm = new PaymentForm();
         public MainMenuForm()
         {
             InitializeComponent();
@@ -38,8 +39,12 @@ namespace Lab_1
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            ShowDialog(new PaymentForm());
-        }
+            _paymentForm.ShowDialog();
+            if (_paymentForm.DialogResult == DialogResult.OK) 
+            {
+                lblCash.Text = $"Cash: {CoffeeMachine.Cash} UAN";
+            }
 
+        }
     }
 }

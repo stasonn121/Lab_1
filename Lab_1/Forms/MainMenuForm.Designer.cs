@@ -33,6 +33,7 @@
             this.btnBuyDrink = new System.Windows.Forms.Button();
             this.btnMoreDrinks = new System.Windows.Forms.Button();
             this.btnAdminPanel = new System.Windows.Forms.Button();
+            this.lblCash = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPrice
@@ -83,11 +84,21 @@
             this.btnAdminPanel.Text = "Admin panel";
             this.btnAdminPanel.UseVisualStyleBackColor = true;
             // 
+            // lblCash
+            // 
+            this.lblCash.AutoSize = true;
+            this.lblCash.Location = new System.Drawing.Point(25, 9);
+            this.lblCash.Name = "lblCash";
+            this.lblCash.Size = new System.Drawing.Size(84, 16);
+            this.lblCash.TabIndex = 6;
+            this.lblCash.Text = "Cash: 0 UAN";
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(318, 398);
+            this.Controls.Add(this.lblCash);
             this.Controls.Add(this.btnAdminPanel);
             this.Controls.Add(this.btnMoreDrinks);
             this.Controls.Add(this.btnBuyDrink);
@@ -96,6 +107,7 @@
             this.Name = "MainMenuForm";
             this.Text = "Coffee Machine";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -106,6 +118,7 @@
         private System.Windows.Forms.Button btnBuyDrink;
         private System.Windows.Forms.Button btnMoreDrinks;
         private System.Windows.Forms.Button btnAdminPanel;
+        private System.Windows.Forms.Label lblCash;
     }
 }
 
