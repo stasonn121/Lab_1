@@ -99,9 +99,8 @@
             this.selectedItems.AutoSize = true;
             this.selectedItems.Location = new System.Drawing.Point(44, 115);
             this.selectedItems.Name = "selectedItems";
-            this.selectedItems.Size = new System.Drawing.Size(40, 16);
+            this.selectedItems.Size = new System.Drawing.Size(0, 16);
             this.selectedItems.TabIndex = 7;
-            this.selectedItems.Text = "items";
             // 
             // MainMenuForm
             // 

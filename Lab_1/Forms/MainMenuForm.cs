@@ -27,6 +27,7 @@ namespace Lab_1
                 string output = string.Empty;
                 foreach (var item in Consts.selectedDrinks)
                 {
+                    if(item.Value != 0)
                     output += $"{item.Value.ToString()} x {item.Key.ToString()} \n";  
                 }
                 selectedItems.Text = output;
