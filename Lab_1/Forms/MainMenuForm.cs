@@ -41,13 +41,5 @@ namespace Lab_1
             ShowDialog(new PaymentForm());
         }
 
-        private void btnCash_Click(object sender, EventArgs e)
-        {
-            string body = $"You cash: {CoffeeMachine.Cash.ToString()} UAN\n";
-            var title = "Cash";
-            var boxButtons = MessageBoxButtons.OK;
-            MessageBox.Show(body, title, boxButtons);
-
-        }
     }
 }
