@@ -64,6 +64,7 @@
             this.btnCash.TabIndex = 2;
             this.btnCash.Text = "Your cash";
             this.btnCash.UseVisualStyleBackColor = true;
+            this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // btnBuyDrink
             // 

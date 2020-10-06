@@ -1,15 +1,10 @@
-﻿using Lab_1.Constants;
+﻿using Lab_1.Model;
+using Lab_1.Constants;
 using Lab_1.Forms;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Lab_1
 {
@@ -44,6 +39,15 @@ namespace Lab_1
         private void btnPayment_Click(object sender, EventArgs e)
         {
             ShowDialog(new PaymentForm());
+        }
+
+        private void btnCash_Click(object sender, EventArgs e)
+        {
+            string body = $"You cash: {CoffeeMachine.Cash.ToString()} UAN\n";
+            var title = "Cash";
+            var boxButtons = MessageBoxButtons.OK;
+            MessageBox.Show(body, title, boxButtons);
+
         }
     }
 }
