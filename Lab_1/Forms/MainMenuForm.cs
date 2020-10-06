@@ -21,6 +21,16 @@ namespace Lab_1
         private void OpenBuyDrinks(object sender, EventArgs e)
         {
             _buyDrinksForm.ShowDialog();
+
+            if (_buyDrinksForm.DialogResult == DialogResult.OK)
+            {
+                string output = string.Empty;
+                foreach (var item in Consts.selectedDrinks)
+                {
+                    output += $"{item.Value.ToString()} x {item.Key.ToString()} \n";  
+                }
+                selectedItems.Text = output;
+            }
         }
 
         private void btnPrice_Click(object sender, EventArgs e)
@@ -46,5 +56,6 @@ namespace Lab_1
             }
 
         }
+
     }
 }

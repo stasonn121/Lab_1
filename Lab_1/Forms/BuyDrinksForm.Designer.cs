@@ -28,133 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblAmericano = new System.Windows.Forms.Label();
+            this.americanoNum = new System.Windows.Forms.NumericUpDown();
+            this.cappuccinoNum = new System.Windows.Forms.NumericUpDown();
+            this.espressoNum = new System.Windows.Forms.NumericUpDown();
+            this.teaNum = new System.Windows.Forms.NumericUpDown();
+            this.latteTeaNum = new System.Windows.Forms.NumericUpDown();
+            this.lblCappuccino = new System.Windows.Forms.Label();
+            this.lblEspresso = new System.Windows.Forms.Label();
+            this.lblTea = new System.Windows.Forms.Label();
+            this.lblLatteTea = new System.Windows.Forms.Label();
             this.btnApply = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            this.lblLatte = new System.Windows.Forms.Label();
+            this.latteNum = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.americanoNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cappuccinoNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.espressoNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teaNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.latteTeaNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.latteNum)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblAmericano
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(43, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Americano:";
+            this.lblAmericano.AutoSize = true;
+            this.lblAmericano.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblAmericano.Location = new System.Drawing.Point(43, 26);
+            this.lblAmericano.Name = "lblAmericano";
+            this.lblAmericano.Size = new System.Drawing.Size(86, 19);
+            this.lblAmericano.TabIndex = 0;
+            this.lblAmericano.Text = "Americano:";
             // 
-            // numericUpDown1
+            // americanoNum
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(145, 26);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown1.TabIndex = 7;
+            this.americanoNum.Location = new System.Drawing.Point(145, 26);
+            this.americanoNum.Name = "americanoNum";
+            this.americanoNum.Size = new System.Drawing.Size(120, 22);
+            this.americanoNum.TabIndex = 7;
             // 
-            // numericUpDown2
+            // cappuccinoNum
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(145, 57);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown2.TabIndex = 8;
+            this.cappuccinoNum.Location = new System.Drawing.Point(145, 57);
+            this.cappuccinoNum.Name = "cappuccinoNum";
+            this.cappuccinoNum.Size = new System.Drawing.Size(120, 22);
+            this.cappuccinoNum.TabIndex = 8;
             // 
-            // numericUpDown3
+            // espressoNum
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(145, 92);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown3.TabIndex = 9;
+            this.espressoNum.Location = new System.Drawing.Point(145, 92);
+            this.espressoNum.Name = "espressoNum";
+            this.espressoNum.Size = new System.Drawing.Size(120, 22);
+            this.espressoNum.TabIndex = 9;
             // 
-            // numericUpDown4
+            // teaNum
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(145, 126);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown4.TabIndex = 10;
+            this.teaNum.Location = new System.Drawing.Point(145, 124);
+            this.teaNum.Name = "teaNum";
+            this.teaNum.Size = new System.Drawing.Size(120, 22);
+            this.teaNum.TabIndex = 11;
             // 
-            // numericUpDown5
+            // latteTeaNum
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(145, 158);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown5.TabIndex = 11;
+            this.latteTeaNum.Location = new System.Drawing.Point(145, 156);
+            this.latteTeaNum.Name = "latteTeaNum";
+            this.latteTeaNum.Size = new System.Drawing.Size(120, 22);
+            this.latteTeaNum.TabIndex = 12;
             // 
-            // numericUpDown6
+            // lblCappuccino
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(145, 189);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown6.TabIndex = 12;
+            this.lblCappuccino.AutoSize = true;
+            this.lblCappuccino.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCappuccino.Location = new System.Drawing.Point(43, 57);
+            this.lblCappuccino.Name = "lblCappuccino";
+            this.lblCappuccino.Size = new System.Drawing.Size(91, 19);
+            this.lblCappuccino.TabIndex = 13;
+            this.lblCappuccino.Text = "Cappuccino:";
             // 
-            // label2
+            // lblEspresso
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(43, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 17);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Cappuccino:";
+            this.lblEspresso.AutoSize = true;
+            this.lblEspresso.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblEspresso.Location = new System.Drawing.Point(43, 92);
+            this.lblEspresso.Name = "lblEspresso";
+            this.lblEspresso.Size = new System.Drawing.Size(75, 19);
+            this.lblEspresso.TabIndex = 14;
+            this.lblEspresso.Text = "Espresso:";
             // 
-            // label3
+            // lblTea
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(43, 92);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 17);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Espresso:";
+            this.lblTea.AutoSize = true;
+            this.lblTea.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTea.Location = new System.Drawing.Point(43, 124);
+            this.lblTea.Name = "lblTea";
+            this.lblTea.Size = new System.Drawing.Size(39, 19);
+            this.lblTea.TabIndex = 16;
+            this.lblTea.Text = "Tea:";
             // 
-            // label4
+            // lblLatteTea
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(42, 126);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 17);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Americano:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(43, 158);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 17);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Tea:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(43, 189);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 17);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Latte-tea:";
+            this.lblLatteTea.AutoSize = true;
+            this.lblLatteTea.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblLatteTea.Location = new System.Drawing.Point(43, 156);
+            this.lblLatteTea.Name = "lblLatteTea";
+            this.lblLatteTea.Size = new System.Drawing.Size(76, 19);
+            this.lblLatteTea.TabIndex = 17;
+            this.lblLatteTea.Text = "Latte-tea:";
             // 
             // btnApply
             // 
-            this.btnApply.Location = new System.Drawing.Point(45, 242);
+            this.btnApply.Location = new System.Drawing.Point(47, 239);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(98, 42);
             this.btnApply.TabIndex = 18;
@@ -164,7 +147,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(165, 242);
+            this.btnCancel.Location = new System.Drawing.Point(167, 239);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 42);
             this.btnCancel.TabIndex = 19;
@@ -172,33 +155,50 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // lblLatte
+            // 
+            this.lblLatte.AutoSize = true;
+            this.lblLatte.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblLatte.Location = new System.Drawing.Point(43, 193);
+            this.lblLatte.Name = "lblLatte";
+            this.lblLatte.Size = new System.Drawing.Size(50, 19);
+            this.lblLatte.TabIndex = 21;
+            this.lblLatte.Text = "Latte:";
+            // 
+            // latteNum
+            // 
+            this.latteNum.Location = new System.Drawing.Point(145, 193);
+            this.latteNum.Name = "latteNum";
+            this.latteNum.Size = new System.Drawing.Size(120, 22);
+            this.latteNum.TabIndex = 20;
+            // 
             // BuyDrinksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 322);
+            this.ClientSize = new System.Drawing.Size(321, 327);
+            this.Controls.Add(this.lblLatte);
+            this.Controls.Add(this.latteNum);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnApply);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.numericUpDown6);
-            this.Controls.Add(this.numericUpDown5);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblLatteTea);
+            this.Controls.Add(this.lblTea);
+            this.Controls.Add(this.lblEspresso);
+            this.Controls.Add(this.lblCappuccino);
+            this.Controls.Add(this.latteTeaNum);
+            this.Controls.Add(this.teaNum);
+            this.Controls.Add(this.espressoNum);
+            this.Controls.Add(this.cappuccinoNum);
+            this.Controls.Add(this.americanoNum);
+            this.Controls.Add(this.lblAmericano);
             this.Name = "BuyDrinksForm";
             this.Text = "BuyDrinksForm";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.americanoNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cappuccinoNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.espressoNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teaNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.latteTeaNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.latteNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,19 +206,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblAmericano;
+        private System.Windows.Forms.NumericUpDown americanoNum;
+        private System.Windows.Forms.NumericUpDown cappuccinoNum;
+        private System.Windows.Forms.NumericUpDown espressoNum;
+        private System.Windows.Forms.NumericUpDown teaNum;
+        private System.Windows.Forms.NumericUpDown latteTeaNum;
+        private System.Windows.Forms.Label lblCappuccino;
+        private System.Windows.Forms.Label lblEspresso;
+        private System.Windows.Forms.Label lblTea;
+        private System.Windows.Forms.Label lblLatteTea;
         private System.Windows.Forms.Button btnApply;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label lblLatte;
+        private System.Windows.Forms.NumericUpDown latteNum;
     }
 }
