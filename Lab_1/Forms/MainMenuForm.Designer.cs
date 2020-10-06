@@ -30,7 +30,6 @@
         {
             this.btnPrice = new System.Windows.Forms.Button();
             this.btnPayment = new System.Windows.Forms.Button();
-            this.btnCash = new System.Windows.Forms.Button();
             this.btnBuyDrink = new System.Windows.Forms.Button();
             this.btnMoreDrinks = new System.Windows.Forms.Button();
             this.btnAdminPanel = new System.Windows.Forms.Button();
@@ -56,19 +55,9 @@
             this.btnPayment.UseVisualStyleBackColor = true;
             this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
-            // btnCash
-            // 
-            this.btnCash.Location = new System.Drawing.Point(80, 156);
-            this.btnCash.Name = "btnCash";
-            this.btnCash.Size = new System.Drawing.Size(155, 50);
-            this.btnCash.TabIndex = 2;
-            this.btnCash.Text = "Your cash";
-            this.btnCash.UseVisualStyleBackColor = true;
-            this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
-            // 
             // btnBuyDrink
             // 
-            this.btnBuyDrink.Location = new System.Drawing.Point(80, 212);
+            this.btnBuyDrink.Location = new System.Drawing.Point(80, 156);
             this.btnBuyDrink.Name = "btnBuyDrink";
             this.btnBuyDrink.Size = new System.Drawing.Size(155, 50);
             this.btnBuyDrink.TabIndex = 3;
@@ -77,7 +66,7 @@
             // 
             // btnMoreDrinks
             // 
-            this.btnMoreDrinks.Location = new System.Drawing.Point(80, 268);
+            this.btnMoreDrinks.Location = new System.Drawing.Point(80, 212);
             this.btnMoreDrinks.Name = "btnMoreDrinks";
             this.btnMoreDrinks.Size = new System.Drawing.Size(155, 50);
             this.btnMoreDrinks.TabIndex = 4;
@@ -87,7 +76,7 @@
             // 
             // btnAdminPanel
             // 
-            this.btnAdminPanel.Location = new System.Drawing.Point(80, 364);
+            this.btnAdminPanel.Location = new System.Drawing.Point(80, 308);
             this.btnAdminPanel.Name = "btnAdminPanel";
             this.btnAdminPanel.Size = new System.Drawing.Size(155, 50);
             this.btnAdminPanel.TabIndex = 5;
@@ -98,11 +87,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 466);
+            this.ClientSize = new System.Drawing.Size(318, 398);
             this.Controls.Add(this.btnAdminPanel);
             this.Controls.Add(this.btnMoreDrinks);
             this.Controls.Add(this.btnBuyDrink);
-            this.Controls.Add(this.btnCash);
             this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.btnPrice);
             this.Name = "MainMenuForm";
@@ -115,7 +103,6 @@
 
         private System.Windows.Forms.Button btnPrice;
         private System.Windows.Forms.Button btnPayment;
-        private System.Windows.Forms.Button btnCash;
         private System.Windows.Forms.Button btnBuyDrink;
         private System.Windows.Forms.Button btnMoreDrinks;
         private System.Windows.Forms.Button btnAdminPanel;
