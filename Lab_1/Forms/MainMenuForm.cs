@@ -34,19 +34,19 @@ namespace Lab_1
             }
         }
 
-        private void btnPrice_Click(object sender, EventArgs e)
-        {
-            string body = string.Empty;
-            var title = "Price list";
-            var boxButtons = MessageBoxButtons.OK;
-            foreach (KeyValuePair<string, int> keyValue in Consts.drinkPrice)
-            {
-                body += $"{keyValue.Key} : {keyValue.Value} UAN\n";
-            }
+        //private void btnPrice_Click(object sender, EventArgs e)
+        //{
+        //    string body = string.Empty;
+        //    var title = "Price list";
+        //    var boxButtons = MessageBoxButtons.OK;
+        //    foreach (KeyValuePair<string, int> keyValue in Consts.drinkPrice)
+        //    {
+        //        body += $"{keyValue.Key} : {keyValue.Value} UAN\n";
+        //    }
 
-            MessageBox.Show(body, title, boxButtons);
+        //    MessageBox.Show(body, title, boxButtons);
 
-        }
+        //}
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
@@ -57,6 +57,5 @@ namespace Lab_1
             }
 
         }
-
     }
 }
