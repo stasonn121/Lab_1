@@ -25,12 +25,17 @@ namespace Lab_1
             if (_buyDrinksForm.DialogResult == DialogResult.OK)
             {
                 string output = string.Empty;
+                //int totalAmount = 0; 
                 foreach (var item in Consts.selectedDrinks)
                 {
-                    if(item.Value != 0)
-                    output += $"{item.Value.ToString()} x {item.Key.ToString()} \n";  
+                    if (item.Value != 0)
+                    {
+                        output += $"{item.Value.ToString()} x {item.Key.ToString()} \n";
+                        CoffeeMachine.OrderAmount += Consts.drinkPrice[item.Key] * item.Value;
+                    }
                 }
-                selectedItems.Text = output;
+                lblSelectedItems.Text = output;
+                lblToPay.Text = $"Amount to pay: {CoffeeMachine.OrderAmount}";
             }
         }
 
@@ -51,10 +56,29 @@ namespace Lab_1
         private void btnPayment_Click(object sender, EventArgs e)
         {
             _paymentForm.ShowDialog();
+            var title = "Payment";
+            var boxButton = MessageBoxButtons.OK;
+
             if (_paymentForm.DialogResult == DialogResult.OK) 
             {
-                lblCash.Text = $"Cash: {CoffeeMachine.Cash} UAN";
+                lblSelectedItems.Text = string.Empty;
+                lblToPay.Text = $"Amount to pay: {CoffeeMachine.OrderAmount}";
+                lblCash.Text = $"Money deposited : {CoffeeMachine.DeposedMoney} UAN";
+                MessageBox.Show("Your order is ready", title, boxButton);
+
+
             }
+
+            if (_paymentForm.DialogResult == DialogResult.No)
+            {
+                lblCash.Text = $"Money deposited : {CoffeeMachine.DeposedMoney} UAN";
+                MessageBox.Show("The amount entered is not enough to process the payment", title, boxButton);
+            }
+
+        }
+
+        private void btnAdminPanel_Click(object sender, EventArgs e)
+        {
 
         }
     }

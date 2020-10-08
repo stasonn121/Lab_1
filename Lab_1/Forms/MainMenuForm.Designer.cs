@@ -33,9 +33,10 @@
             this.btnMoreDrinks = new System.Windows.Forms.Button();
             this.btnAdminPanel = new System.Windows.Forms.Button();
             this.lblCash = new System.Windows.Forms.Label();
-            this.selectedItems = new System.Windows.Forms.Label();
+            this.lblSelectedItems = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblToPay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPayment
@@ -75,28 +76,29 @@
             this.btnAdminPanel.TabIndex = 5;
             this.btnAdminPanel.Text = "Admin panel";
             this.btnAdminPanel.UseVisualStyleBackColor = true;
+            this.btnAdminPanel.Click += new System.EventHandler(this.btnAdminPanel_Click);
             // 
             // lblCash
             // 
             this.lblCash.AutoSize = true;
-            this.lblCash.Location = new System.Drawing.Point(44, 59);
+            this.lblCash.Location = new System.Drawing.Point(44, 76);
             this.lblCash.Name = "lblCash";
-            this.lblCash.Size = new System.Drawing.Size(84, 16);
+            this.lblCash.Size = new System.Drawing.Size(158, 16);
             this.lblCash.TabIndex = 6;
-            this.lblCash.Text = "Cash: 0 UAN";
+            this.lblCash.Text = "Money deposited: 0 UAN";
             // 
-            // selectedItems
+            // lblSelectedItems
             // 
-            this.selectedItems.AutoSize = true;
-            this.selectedItems.Location = new System.Drawing.Point(44, 244);
-            this.selectedItems.Name = "selectedItems";
-            this.selectedItems.Size = new System.Drawing.Size(0, 16);
-            this.selectedItems.TabIndex = 7;
+            this.lblSelectedItems.AutoSize = true;
+            this.lblSelectedItems.Location = new System.Drawing.Point(44, 254);
+            this.lblSelectedItems.Name = "lblSelectedItems";
+            this.lblSelectedItems.Size = new System.Drawing.Size(0, 16);
+            this.lblSelectedItems.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 98);
+            this.label1.Location = new System.Drawing.Point(44, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 96);
             this.label1.TabIndex = 8;
@@ -106,20 +108,30 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 227);
+            this.label2.Location = new System.Drawing.Point(44, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 16);
             this.label2.TabIndex = 9;
             this.label2.Text = "Your choise: ";
+            // 
+            // lblToPay
+            // 
+            this.lblToPay.AutoSize = true;
+            this.lblToPay.Location = new System.Drawing.Point(44, 42);
+            this.lblToPay.Name = "lblToPay";
+            this.lblToPay.Size = new System.Drawing.Size(141, 16);
+            this.lblToPay.TabIndex = 10;
+            this.lblToPay.Text = "Amount to pay : 0 UAN";
             // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(553, 438);
+            this.Controls.Add(this.lblToPay);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.selectedItems);
+            this.Controls.Add(this.lblSelectedItems);
             this.Controls.Add(this.lblCash);
             this.Controls.Add(this.btnAdminPanel);
             this.Controls.Add(this.btnMoreDrinks);
@@ -138,9 +150,10 @@
         private System.Windows.Forms.Button btnMoreDrinks;
         private System.Windows.Forms.Button btnAdminPanel;
         private System.Windows.Forms.Label lblCash;
-        private System.Windows.Forms.Label selectedItems;
+        private System.Windows.Forms.Label lblSelectedItems;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblToPay;
     }
 }
 

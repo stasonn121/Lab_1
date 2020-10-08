@@ -16,11 +16,12 @@ namespace Lab_1.Forms
         {
             DialogResult = DialogResult.OK;
             {
-               Consts.selectedDrinks["Americano"] = (int)americanoNum.Value;
-               Consts.selectedDrinks["Cappuccino"] = (int)cappuccinoNum.Value;
-               Consts.selectedDrinks["Espresso"] = (int)espressoNum.Value;
-               Consts.selectedDrinks["Tea"] = (int)teaNum.Value;
-               Consts.selectedDrinks["LatteTea"] = (int)latteTeaNum.Value;
+                Consts.selectedDrinks["Americano" ] = (int)americanoNum.Value;
+                Consts.selectedDrinks["Cappuccino"] = (int)cappuccinoNum.Value;
+                Consts.selectedDrinks["Latte"     ] = (int)latteNum.Value;
+                Consts.selectedDrinks["Espresso"  ] = (int)espressoNum.Value;
+                Consts.selectedDrinks["Tea"       ] = (int)teaNum.Value;
+                Consts.selectedDrinks["LatteTea"  ] = (int)latteTeaNum.Value;
             }          
         }
 

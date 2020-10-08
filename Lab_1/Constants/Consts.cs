@@ -11,8 +11,8 @@ namespace Lab_1.Constants
             {"Espresso",  15},
             {"Latte",     25},
             {"Tea",       10},
-            {"Cappucino", 25},
-            {"TeaLatte",  20},
+            {"Cappuccino",25},
+            {"LatteTea",  20},
         };
 
         public static Dictionary<string, int> selectedDrinks = new Dictionary<string, int>
@@ -21,8 +21,8 @@ namespace Lab_1.Constants
             {"Espresso",  0},
             {"Latte",     0},
             {"Tea",       0},
-            {"Cappucino", 0},
-            {"TeaLatte",  0},
+            {"Cappuccino",0},
+            {"LatteTea",  0},
         };
 
     }

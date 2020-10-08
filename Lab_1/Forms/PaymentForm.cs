@@ -13,9 +13,10 @@ namespace Lab_1.Forms
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            CoffeeMachine.Cash += (int)numCash.Value;
+            bool isPaymentPassed = CoffeeMachine.ReplenishmentAndPayment((int)numCash.Value);
             numCash.Value = 0;
-            DialogResult = DialogResult.OK;
+            if (isPaymentPassed) { DialogResult = DialogResult.OK; }
+            else { DialogResult = DialogResult.No; }
 
         }
 
