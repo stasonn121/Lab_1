@@ -13,8 +13,8 @@ namespace Lab_1.Forms
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            bool isPaymentPassed = CoffeeMachine.ReplenishmentAndPayment((int)numCash.Value);
-            numCash.Value = 0;
+            bool isPaymentPassed = CoffeeMachine.ReplenishmentAndPayment((int)numAddSomething.Value);
+            numAddSomething.Value = 0;
             if (isPaymentPassed) { DialogResult = DialogResult.OK; }
             else { DialogResult = DialogResult.No; }
 
@@ -23,7 +23,7 @@ namespace Lab_1.Forms
         private void btnCancel_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
-            numCash.Value = 0;
+            numAddSomething.Value = 0;
         }
 
 

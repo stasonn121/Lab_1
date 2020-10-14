@@ -70,7 +70,7 @@
             // 
             // btnAdminPanel
             // 
-            this.btnAdminPanel.Location = new System.Drawing.Point(337, 318);
+            this.btnAdminPanel.Location = new System.Drawing.Point(337, 237);
             this.btnAdminPanel.Name = "btnAdminPanel";
             this.btnAdminPanel.Size = new System.Drawing.Size(155, 50);
             this.btnAdminPanel.TabIndex = 5;
@@ -83,7 +83,7 @@
             this.lblCash.AutoSize = true;
             this.lblCash.Location = new System.Drawing.Point(44, 76);
             this.lblCash.Name = "lblCash";
-            this.lblCash.Size = new System.Drawing.Size(158, 16);
+            this.lblCash.Size = new System.Drawing.Size(165, 17);
             this.lblCash.TabIndex = 6;
             this.lblCash.Text = "Money deposited: 0 UAN";
             // 
@@ -92,7 +92,7 @@
             this.lblSelectedItems.AutoSize = true;
             this.lblSelectedItems.Location = new System.Drawing.Point(44, 254);
             this.lblSelectedItems.Name = "lblSelectedItems";
-            this.lblSelectedItems.Size = new System.Drawing.Size(0, 16);
+            this.lblSelectedItems.Size = new System.Drawing.Size(0, 17);
             this.lblSelectedItems.TabIndex = 7;
             // 
             // label1
@@ -100,7 +100,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(44, 125);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 96);
+            this.label1.Size = new System.Drawing.Size(143, 102);
             this.label1.TabIndex = 8;
             this.label1.Text = "Americano : 15 UAN\r\nEspresso : 15 UAN\r\nLatte : 25 UAN\r\nTea : 10 UAN\r\nCappuccino :" +
     " 25 UAN\r\nTeaLatte : 20 UAN";
@@ -110,7 +110,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(44, 237);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 16);
+            this.label2.Size = new System.Drawing.Size(91, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "Your choise: ";
             // 
@@ -119,7 +119,7 @@
             this.lblToPay.AutoSize = true;
             this.lblToPay.Location = new System.Drawing.Point(44, 42);
             this.lblToPay.Name = "lblToPay";
-            this.lblToPay.Size = new System.Drawing.Size(141, 16);
+            this.lblToPay.Size = new System.Drawing.Size(152, 17);
             this.lblToPay.TabIndex = 10;
             this.lblToPay.Text = "Amount to pay : 0 UAN";
             // 
