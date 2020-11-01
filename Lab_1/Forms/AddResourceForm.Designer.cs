@@ -31,8 +31,8 @@
             this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblResource = new System.Windows.Forms.Label();
-            this.numAddSomething = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numAddSomething)).BeginInit();
+            this.numAddResouce = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numAddResouce)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOk
@@ -65,25 +65,25 @@
             this.lblResource.TabIndex = 2;
             this.lblResource.Text = "Add :";
             // 
-            // numAddSomething
+            // numAddResouce
             // 
-            this.numAddSomething.Location = new System.Drawing.Point(225, 54);
-            this.numAddSomething.Name = "numAddSomething";
-            this.numAddSomething.Size = new System.Drawing.Size(120, 22);
-            this.numAddSomething.TabIndex = 3;
+            this.numAddResouce.Location = new System.Drawing.Point(168, 54);
+            this.numAddResouce.Name = "numAddResouce";
+            this.numAddResouce.Size = new System.Drawing.Size(177, 22);
+            this.numAddResouce.TabIndex = 3;
             // 
             // AddResourceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(390, 181);
-            this.Controls.Add(this.numAddSomething);
+            this.Controls.Add(this.numAddResouce);
             this.Controls.Add(this.lblResource);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Name = "AddResourceForm";
             this.Text = "AddResourceForm";
-            ((System.ComponentModel.ISupportInitialize)(this.numAddSomething)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAddResouce)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,6 +94,6 @@
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lblResource;
-        private System.Windows.Forms.NumericUpDown numAddSomething;
+        private System.Windows.Forms.NumericUpDown numAddResouce;
     }
 }

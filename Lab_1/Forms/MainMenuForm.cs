@@ -34,7 +34,7 @@ namespace Lab_1
         {
             _paymentForm.ShowDialog();
             var title = "Payment";
-            var boxButton = MessageBoxButtons.OK;
+            var boxButton = MessageBoxButtons.OK;x
 
             if (_paymentForm.DialogResult == DialogResult.OK) 
             {
@@ -42,6 +42,7 @@ namespace Lab_1
                 lblToPay.Text = $"Amount to pay: {CoffeeMachine.OrderAmount}";
                 lblCash.Text = $"Money deposited : {CoffeeMachine.DeposedMoney} UAN";
                 MessageBox.Show("Your order is ready", title, boxButton);
+                InitLabelChoise();
             }
 
             if (_paymentForm.DialogResult == DialogResult.No)

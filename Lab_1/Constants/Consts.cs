@@ -4,7 +4,6 @@ namespace Lab_1.Constants
 {
     static class Consts
     {
-
         public static readonly Dictionary<string, int> drinkPrice = new Dictionary<string, int>
         {
             {"Americano", 15},
@@ -25,5 +24,13 @@ namespace Lab_1.Constants
             {"LatteTea",  0},
         };
 
+    }
+
+    public enum Resource
+    {
+        milk,
+        coffee,
+        water,
+        sugar
     }
 }

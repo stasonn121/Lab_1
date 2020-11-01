@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Lab_1.Constants;
 
 namespace Lab_1.Model
 {
@@ -55,6 +51,22 @@ namespace Lab_1.Model
                 return true;
 
             }
+        }
+
+        public static int Remainder(Resource resource)
+        {
+            switch (resource)
+            {
+                case Resource.milk:
+                    return _milkMax - MilkNow;
+                case Resource.coffee:
+                    return _coffeeMax - CoffeeNow;
+                case Resource.water:
+                    return _waterMax - WaterNow;
+                case Resource.sugar:
+                    return _sugarMax - SugarNow;
+            }
+            return 0;
         }
     }
 }

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lab_1.Constants;
 
 namespace Lab_1.Forms
 {
@@ -19,25 +13,25 @@ namespace Lab_1.Forms
 
         private void BtnAddMilk_Click(object sender, EventArgs e)
         {
-            AddResourceForm addMilk = new AddResourceForm("Add milk", "Add milk:");
+            AddResourceForm addMilk = new AddResourceForm(Resource.milk);
             addMilk.ShowDialog();
         }
 
         private void BtnAddCoffee_Click(object sender, EventArgs e)
         {
-            AddResourceForm addCoffee = new AddResourceForm("Add coffee", "Add coffee:");
+            AddResourceForm addCoffee = new AddResourceForm(Resource.coffee);
             addCoffee.ShowDialog();
         }
 
         private void BtnAddWater_Click(object sender, EventArgs e)
         {
-            AddResourceForm addWater = new AddResourceForm("Add water", "Add water:");
+            AddResourceForm addWater = new AddResourceForm(Resource.water);
             addWater.ShowDialog();
         }
 
         private void BtnAddSugar_Click(object sender, EventArgs e)
         {
-            AddResourceForm addSugar = new AddResourceForm("Add sugar", "Add sugar:");
+            AddResourceForm addSugar = new AddResourceForm(Resource.sugar);
             addSugar.ShowDialog();
         }
 

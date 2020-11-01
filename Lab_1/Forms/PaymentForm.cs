@@ -15,8 +15,15 @@ namespace Lab_1.Forms
         {
             bool isPaymentPassed = CoffeeMachine.ReplenishmentAndPayment((int)numAddSomething.Value);
             numAddSomething.Value = 0;
-            if (isPaymentPassed) { DialogResult = DialogResult.OK; }
-            else { DialogResult = DialogResult.No; }
+            if (isPaymentPassed) 
+            {
+
+                DialogResult = DialogResult.OK;
+            }
+            else
+            { 
+                DialogResult = DialogResult.No;
+            }
 
         }
 

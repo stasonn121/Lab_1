@@ -125,8 +125,10 @@
             // 
             // MainMenuForm
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(553, 438);
             this.Controls.Add(this.lblToPay);
             this.Controls.Add(this.label2);
@@ -137,8 +139,13 @@
             this.Controls.Add(this.btnMoreDrinks);
             this.Controls.Add(this.btnBuyDrink);
             this.Controls.Add(this.btnPayment);
+            this.MaximizeBox = false;
             this.Name = "MainMenuForm";
+            this.ShowIcon = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Coffee Machine";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

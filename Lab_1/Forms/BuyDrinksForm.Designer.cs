@@ -56,7 +56,7 @@
             this.lblAmericano.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblAmericano.Location = new System.Drawing.Point(43, 26);
             this.lblAmericano.Name = "lblAmericano";
-            this.lblAmericano.Size = new System.Drawing.Size(86, 19);
+            this.lblAmericano.Size = new System.Drawing.Size(84, 17);
             this.lblAmericano.TabIndex = 0;
             this.lblAmericano.Text = "Americano:";
             // 
@@ -101,7 +101,7 @@
             this.lblCappuccino.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblCappuccino.Location = new System.Drawing.Point(43, 57);
             this.lblCappuccino.Name = "lblCappuccino";
-            this.lblCappuccino.Size = new System.Drawing.Size(91, 19);
+            this.lblCappuccino.Size = new System.Drawing.Size(89, 17);
             this.lblCappuccino.TabIndex = 13;
             this.lblCappuccino.Text = "Cappuccino:";
             // 
@@ -111,7 +111,7 @@
             this.lblEspresso.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblEspresso.Location = new System.Drawing.Point(43, 92);
             this.lblEspresso.Name = "lblEspresso";
-            this.lblEspresso.Size = new System.Drawing.Size(75, 19);
+            this.lblEspresso.Size = new System.Drawing.Size(74, 17);
             this.lblEspresso.TabIndex = 14;
             this.lblEspresso.Text = "Espresso:";
             // 
@@ -121,7 +121,7 @@
             this.lblTea.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblTea.Location = new System.Drawing.Point(43, 124);
             this.lblTea.Name = "lblTea";
-            this.lblTea.Size = new System.Drawing.Size(39, 19);
+            this.lblTea.Size = new System.Drawing.Size(37, 17);
             this.lblTea.TabIndex = 16;
             this.lblTea.Text = "Tea:";
             // 
@@ -131,7 +131,7 @@
             this.lblLatteTea.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblLatteTea.Location = new System.Drawing.Point(43, 156);
             this.lblLatteTea.Name = "lblLatteTea";
-            this.lblLatteTea.Size = new System.Drawing.Size(76, 19);
+            this.lblLatteTea.Size = new System.Drawing.Size(73, 17);
             this.lblLatteTea.TabIndex = 17;
             this.lblLatteTea.Text = "Latte-tea:";
             // 
@@ -161,7 +161,7 @@
             this.lblLatte.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblLatte.Location = new System.Drawing.Point(43, 193);
             this.lblLatte.Name = "lblLatte";
-            this.lblLatte.Size = new System.Drawing.Size(50, 19);
+            this.lblLatte.Size = new System.Drawing.Size(48, 17);
             this.lblLatte.TabIndex = 21;
             this.lblLatte.Text = "Latte:";
             // 

@@ -1,26 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lab_1.Constants;
+using Lab_1.Model;
 
 namespace Lab_1.Forms
 {
     public partial class AddResourceForm : Form
     {
-        public AddResourceForm(string nameForm, string lblResourceText)
+        public AddResourceForm(Resource resource)
         {
+            this.Name = resource.ToString();
             InitializeComponent();
-            this.Name = nameForm;
-            this.lblResource.Text = lblResourceText;
+            numAddResouce.Maximum = CoffeeMachine.Remainder(resource);
+            this.lblResource.Text = $"Add {resource}:";
         }
 
         private void btnOk_Click(object sender, EventArgs e)
         {
+
             DialogResult = DialogResult.OK;
         }
 
