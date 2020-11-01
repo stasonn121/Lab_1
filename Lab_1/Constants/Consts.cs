@@ -24,13 +24,60 @@ namespace Lab_1.Constants
             {"LatteTea",  0},
         };
 
+        public enum Americano
+        {
+            water = 200,
+            sugar = 10,
+            coffee = 20
+        }
+
+        public enum Espresso
+        {
+            water = 100,
+            sugar = 10,
+            coffee = 20
+        }
+        public enum Latte
+        {
+            water = 200,
+            sugar = 10,
+            coffee = 20, 
+            milk = 50
+        }
+        public enum Tea
+        {
+            water = 200,
+            sugar = 10,
+            tea = 5
+        }
+        public enum Cappuccino
+        {
+            water = 200,
+            sugar = 10,
+            coffee = 20, 
+            milk  = 50
+        }
+        public enum LatteTea
+        {
+            water = 200,
+            sugar = 10,
+            coffee = 20,
+            tea = 5,
+            milk = 20
+        }
+
     }
+
+    // добавил чай
 
     public enum Resource
     {
         milk,
         coffee,
         water,
-        sugar
+        sugar,
+        tea
     }
+      
+    
 }

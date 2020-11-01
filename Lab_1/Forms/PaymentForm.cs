@@ -1,5 +1,6 @@
 ﻿using System;
 using Lab_1.Model;
+using Lab_1.Constants;
 using System.Windows.Forms;
 
 namespace Lab_1.Forms
@@ -18,7 +19,28 @@ namespace Lab_1.Forms
             if (isPaymentPassed) 
             {
 
-                DialogResult = DialogResult.OK;
+
+
+
+                if (CoffeeMachine.IsResourseEnough())
+                {
+
+                    CoffeeMachine.MakeDrinks();
+                    DialogResult = DialogResult.OK;
+                    Consts.selectedDrinks["Americano"] = 0;
+                    Consts.selectedDrinks["Cappuccino"] = 0;
+                    Consts.selectedDrinks["Latte"] = 0;
+                    Consts.selectedDrinks["Espresso"] = 0;
+                    Consts.selectedDrinks["Tea"] = 0;
+                    Consts.selectedDrinks["LatteTea"] = 0;
+
+                }
+                else
+                {
+                    DialogResult = DialogResult.Cancel;
+                }
+
+
             }
             else
             { 
@@ -32,7 +54,5 @@ namespace Lab_1.Forms
             DialogResult = DialogResult.Cancel;
             numAddSomething.Value = 0;
         }
-
-
     }
 }

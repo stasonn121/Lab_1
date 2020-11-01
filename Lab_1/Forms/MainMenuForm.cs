@@ -16,7 +16,7 @@ namespace Lab_1
         public MainMenuForm()
         {
             InitializeComponent();
-            InitLabelChoise();
+            InitChoiseLabel();
         }
 
         private void OpenBuyDrinks(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace Lab_1
             if (_buyDrinksForm.DialogResult == DialogResult.OK)
             {
                 CoffeeMachine.OrderAmount = 0;
-                InitLabelChoise();
+                InitChoiseLabel();
             }
         }
 
@@ -34,21 +34,21 @@ namespace Lab_1
         {
             _paymentForm.ShowDialog();
             var title = "Payment";
-            var boxButton = MessageBoxButtons.OK;x
+            var boxButton = MessageBoxButtons.OK;
 
             if (_paymentForm.DialogResult == DialogResult.OK) 
             {
                 lblSelectedItems.Text = string.Empty;
                 lblToPay.Text = $"Amount to pay: {CoffeeMachine.OrderAmount}";
-                lblCash.Text = $"Money deposited : {CoffeeMachine.DeposedMoney} UAN";
+                lblCash.Text = $"Money deposited: {CoffeeMachine.DeposedMoney} UAN";
                 MessageBox.Show("Your order is ready", title, boxButton);
-                InitLabelChoise();
+                InitChoiseLabel();
             }
 
             if (_paymentForm.DialogResult == DialogResult.No)
             {
-                lblCash.Text = $"Money deposited : {CoffeeMachine.DeposedMoney} UAN";
-                MessageBox.Show("The amount entered is not enough to process the payment", title, boxButton);
+                lblCash.Text = $"Money deposited: {CoffeeMachine.DeposedMoney} UAN";
+                MessageBox.Show("Payment was failed", title, boxButton);
             }
 
         }
@@ -58,7 +58,7 @@ namespace Lab_1
             _adminPanel.ShowDialog();
         }
 
-        private void InitLabelChoise ()
+        private void InitChoiseLabel ()
         {
             string output = string.Empty;
             //int totalAmount = 0; 
